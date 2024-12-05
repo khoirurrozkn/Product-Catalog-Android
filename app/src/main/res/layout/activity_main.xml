@@ -5,15 +5,300 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="22dp">
+
+                <TextView
+                    android:id="@+id/text_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Perfect Clothes \nFor Your Aura"
+                    android:textSize="32sp" />
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher_foreground"
+                android:contentDescription="Logo" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/searchingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="20dp"
+                android:hint="Search Here ..."
+                android:background="@drawable/search_background"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="12dp"
+                        android:text="All"
+                        android:textSize="16sp"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="@color/black"
+                        android:textColor="@color/white"/>
+<!--                    android:scaleX="0.9"-->
+<!--                    android:scaleY="0.9"-->
+<!--                    kasih atas ini nanti-->
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="12dp"
+                        android:text="Jacket"
+                        android:textSize="16sp"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/black"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="12dp"
+                        android:text="Shirt"
+                        android:textSize="16sp"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/black"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="12dp"
+                        android:text="Pant"
+                        android:textSize="16sp"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/black"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="12dp"
+                        android:text="Shoes"
+                        android:textSize="16sp"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/black"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="12dp"
+                        android:text="Hat"
+                        android:textSize="16sp"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/black"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/anti_jamet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:background="@color/black"
+                    android:layout_marginEnd="16dp"
+                    android:contentDescription="Product Image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Anti Jamet"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sold: 999+"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Price: $125"
+                        android:textSize="19sp"
+                        android:gravity="end|bottom"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/agus_sedih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:background="@color/black"
+                    android:layout_marginEnd="16dp"
+                    android:contentDescription="Product Image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agus sedih"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sold: 0"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Price: $100.000"
+                        android:textSize="19sp"
+                        android:gravity="end|bottom"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/navbar_background"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Icon 1" />
+
+                <ImageButton
+                    android:id="@+id/notification_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Icon 2" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Icon 3" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Icon 3" />
+
+            </LinearLayout>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
