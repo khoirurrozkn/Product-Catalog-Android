@@ -155,6 +155,7 @@
             </HorizontalScrollView>
 
             <LinearLayout
+                android:id="@+id/anti_jamet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -199,6 +200,7 @@
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/agus_sedih"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -242,138 +244,6 @@
 
                 </LinearLayout>
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingHorizontal="16dp"
-                android:gravity="center_vertical"
-                android:layout_marginTop="20dp">
-
-                <ImageView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
-                    android:background="@color/black"
-                    android:layout_marginEnd="16dp"
-                    android:contentDescription="Product Image" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Anti Jamet"
-                        android:textStyle="bold"
-                        android:textSize="25sp"
-                        android:layout_marginBottom="4dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sold: 999+"
-                        android:textSize="19sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Price: $125"
-                        android:textSize="19sp"
-                        android:gravity="end|bottom"/>
-
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingHorizontal="16dp"
-                android:gravity="center_vertical"
-                android:layout_marginTop="20dp">
-
-                <ImageView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
-                    android:background="@color/black"
-                    android:layout_marginEnd="16dp"
-                    android:contentDescription="Product Image" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Anti Jamet"
-                        android:textStyle="bold"
-                        android:textSize="25sp"
-                        android:layout_marginBottom="4dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sold: 999+"
-                        android:textSize="19sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Price: $125"
-                        android:textSize="19sp"
-                        android:gravity="end|bottom"/>
-
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingHorizontal="16dp"
-                android:gravity="center_vertical"
-                android:layout_marginTop="20dp">
-
-                <ImageView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
-                    android:background="@color/black"
-                    android:layout_marginEnd="16dp"
-                    android:contentDescription="Product Image" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Anti Jamet"
-                        android:textStyle="bold"
-                        android:textSize="25sp"
-                        android:layout_marginBottom="4dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sold: 999+"
-                        android:textSize="19sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Price: $125"
-                        android:textSize="19sp"
-                        android:gravity="end|bottom"/>
-
-                </LinearLayout>
-            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
@@ -394,32 +264,37 @@
                 android:orientation="horizontal"
                 android:gravity="center" >
 
-                <ImageView
+                <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:src="@drawable/ic_launcher_foreground"
+                    android:background="@android:color/transparent"
                     android:contentDescription="Icon 1" />
 
-                <ImageView
+                <ImageButton
+                    android:id="@+id/notification_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:src="@drawable/ic_launcher_foreground"
+                    android:background="@android:color/transparent"
                     android:contentDescription="Icon 2" />
 
-                <ImageView
+                <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:src="@drawable/ic_launcher_foreground"
+                    android:background="@android:color/transparent"
                     android:contentDescription="Icon 3" />
 
-                <ImageView
+                <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:src="@drawable/ic_launcher_foreground"
+                    android:background="@android:color/transparent"
                     android:contentDescription="Icon 3" />
 
             </LinearLayout>
